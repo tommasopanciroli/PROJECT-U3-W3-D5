@@ -1,17 +1,19 @@
 import './App.css'
-import "bootstrap/dist/css/bootstrap.min.css"
+import 'bootstrap/dist/css/bootstrap.min.css'
 import CustomNavbar from './components/CustomNavbar'
 import RadioComponent from './components/RadioComponent'
+import MainContent from './components/MainContent'
+import CustomFooter from './components/CustomFooter'
 
 function App() {
-  
   return (
     <>
-    <div className='app bg-dark text-light'>
-      <CustomNavbar />
-      <RadioComponent />
-    </div>
-     
+      <div className="bg-dark text-light">
+        <CustomNavbar />
+        <RadioComponent />
+        <MainContent />
+        <CustomFooter />
+      </div>
     </>
   )
 }

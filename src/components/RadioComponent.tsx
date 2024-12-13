@@ -40,8 +40,9 @@ const RadioComponent = () => {
     <Container>
       <h2 className="text-light my-4">Nuovi episodi radio</h2>
       <Row>
-        {radioEpisodes.map((episode) => (
+        {radioEpisodes.map((episode, i) => (
           <Col
+            key={i}
             xs={12}
             sm={6}
             md={4}
@@ -59,9 +60,7 @@ const RadioComponent = () => {
                 alt={`Cover of ${episode.title}`}
               />
               <Card.Body>
-                <Card.Title>
-                  {episode.title}
-                </Card.Title>
+                <Card.Title>{episode.title}</Card.Title>
               </Card.Body>
             </Card>
           </Col>

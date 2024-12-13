@@ -3,12 +3,6 @@ body {
   background-color: #121212;
 }
 
-.app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 header {
   background-color: #1c1c1c;
   border-bottom: 1px solid #444;
@@ -27,16 +21,4 @@ h2 {
   font-size: 1.5rem;
 }
 
-@media (max-width: 576px) {
-  h1 {
-    font-size: 1.5rem;
-  }
 
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  .navbar {
-    font-size: 0.8rem;
-  }
-}
